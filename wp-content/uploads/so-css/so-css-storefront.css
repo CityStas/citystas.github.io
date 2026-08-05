@@ -1,0 +1,148 @@
+.site-header {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.storefront-primary-navigation {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.home .site-content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.site-footer a:hover {
+  visibility: hidden;
+}
+
+.site-footer a {
+  display: none;
+}
+
+#colophon.site-footer {
+  display: none;
+}
+
+.site-info span[role=separator] {
+  text-transform: lowercase;
+}
+
+.site-info {
+  visibility: hidden;
+}
+
+.woocommerce-store-notice__dismiss-link {
+  display: none !important;
+}
+
+/* Анимация появления блоков слева направо на главной странице */
+.home .site-main > * {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: fadeInRight 1.0s ease-out forwards;
+}
+
+.home .site-main > *:nth-child(1) { animation-delay: 0s; }
+.home .site-main > *:nth-child(2) { animation-delay: 0.2s; }
+.home .site-main > *:nth-child(3) { animation-delay: 0.4s; }
+.home .site-main > *:nth-child(4) { animation-delay: 0.6s; }
+.home .site-main > *:nth-child(5) { animation-delay: 0.8s; }
+.home .site-main > *:nth-child(6) { animation-delay: 1.0s; }
+.home .site-main > *:nth-child(7) { animation-delay: 1.2s; }
+.home .site-main > *:nth-child(8) { animation-delay: 1.4s; }
+.home .site-main > *:nth-child(9) { animation-delay: 1.6s; }
+.home .site-main > *:nth-child(10) { animation-delay: 1.8s; }
+/* Добавьте больше nth-child, если нужно для большего количества блоков */
+
+@keyframes fadeInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Эффект увеличения фото товаров на всем сайте при наведении ТОЛЬКО на фото */
+.woocommerce ul.products li.product {
+  overflow: hidden; /* Ограничивает изображение в пределах карточки */
+}
+
+.woocommerce ul.products li.product img {
+  transition: transform 0.3s ease; /* Плавный переход */
+}
+
+.woocommerce ul.products li.product img:hover {
+  transform: scale(1.1); /* Увеличение на 10% при наведении ТОЛЬКО на изображение */
+}
+
+.home .woocommerce ul.products li.product img:hover {
+  transform: scale(1.1); /* Увеличение на 10% при наведении ТОЛЬКО на изображение */
+}
+
+/* Анимация инверсии цветов для кнопок "Купить" на всем сайте */
+.woocommerce button,
+.woocommerce a.button {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Плавный переход */
+}
+
+.woocommerce button:hover,
+.woocommerce a.button:hover {
+  background-color: #fff !important; /* Белый фон при наведении */
+  color: #000 !important; /* Черный текст при наведении */
+}
+
+/* Добавляем иконку корзины рядом со ссылкой на страницу Корзина в гамбургерном меню мобильной версии */
+@media (max-width: 768px) {
+  .handheld-navigation a[href*="cart"]::after {
+    content: "🛒"; /* Иконка корзины (можно заменить на кастомный SVG, если нужно) */
+    margin-left: 10px; /* Отступ слева от текста ссылки */
+    font-size: 16px; /* Размер иконки */
+    vertical-align: middle; /* Выравнивание по центру текста */
+    color: inherit; /* Цвет иконки совпадает с цветом текста */
+  }
+}
+
+/* Уменьшаем вертикальный отступ между логотипом и меню в шапке */
+.site-header .site-branding {
+  margin-bottom: 5px !important; /* Уменьшаем отступ снизу от логотипа (дефолт может быть 20-30px или больше) */
+}
+
+.site-header .main-navigation {
+  margin-top: 5px !important; /* Уменьшаем отступ сверху от меню (если нужно) */
+}
+
+@media (min-width: 768px) {
+  .woocommerce-store-notice.demo_store {
+    text-align: center !important;  /* Центрирует текст внутри  */
+  }
+}
+@media only screen and (max-width: 768px) {
+    .site-branding {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+}
+@media (max-width: 768px) {
+    /* Применяем отступ к самой кнопке */
+    button#site-navigation-menu-toggle.menu-toggle {
+        margin-top: 10px; /* Смещаем кнопку вниз на 10 пикселей */
+    }
+    
+    /* Если 10px мало, попробуйте 15px или 20px */
+}
+.woocommerce-message {
+    background-color: #000000 !important; /* Черный цвет фона */
+    color: #FFFFFF !important; /* Белый цвет текста */
+}
+
+.woocommerce-message a.button.wc-forward {
+    background-color: #333333 !important; /* Цвет кнопки (опционально) */
+    color: #FFFFFF !important; /* Цвет текста на кнопке */
+}
+.cart-empty.woocommerce-info {
+    background-color: black; /* Использует стандартное название цвета */
+    /* Или можно использовать шестнадцатеричный код для более точного оттенка серого: */
+    /* background-color: #DDDDDD; */
+    /* background-color: #CCCCCC; */
+}

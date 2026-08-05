@@ -1,0 +1,60 @@
+/* 1. Убираем заголовок страницы (он часто пустой, но занимает место) */
+.home .entry-header {
+    display: none !important;
+}
+
+/* 2. Убираем внутренние отступы основного контейнера Botiga */
+.home .content-area .entry-content {
+    margin-top: 0 !important;
+}
+
+.home .site-content {
+    padding-top: 0 !important;
+}
+
+/* 3. Убираем стандартный отступ сверху у списка товаров */
+.home ul.products {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.home #content.site-content {
+    margin-top: -30px !important; /* Отрицательный отступ подтянет товары вверх */
+}
+
+/* Полностью скрываем и обнуляем пустые строки хедера */
+.bhfb-above_header_row, 
+.bhfb-below_header_row {
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Уменьшаем отступы в главной строке шапки */
+.bhfb-main_header_row {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+/* Убираем лишние отступы у логотипа */
+.bhfb-component-logo {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+
+/* Убираем отступ между шапкой и первым блоком Elementor */
+.site-content {
+    padding-top: 0 !important;
+}
+
+#primary {
+    margin-top: 0 !important;
+}
+
+/* Убираем стандартные внешние отступы у секций Elementor на главной */
+.home .elementor-section-wrap > .elementor-section {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}

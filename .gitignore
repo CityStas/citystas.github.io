@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Прочее
+node_modules/
+
+# Бэкап (не заливать в репозиторий!)
+back/
+*.sql
+*.zip
+
+# Большие видео (заменены на VK-embedded)
+*.mp4
+*.mov
+*.avi
+
+# Секреты (не заливать!)
+.git-credentials
+.git-credentials.*
+
+# Сгенерированная папка для Vercel (создаётся build.mjs)
+public/

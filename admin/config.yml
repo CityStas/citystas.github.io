@@ -1,0 +1,31 @@
+backend:
+  name: github
+  repo: CityStas/bazaskate.shop
+  branch: main
+
+media_folder: "wp-content/uploads"
+public_folder: "/wp-content/uploads"
+
+collections:
+  - name: "settings"
+    label: "Настройки"
+    files:
+      - name: "settings"
+        label: "Настройки сайта"
+        file: "content/products.json"
+        fields:
+          - label: "Общая ссылка на Авито"
+            name: "avito_url"
+            widget: "string"
+            hint: "Ссылка на ваш магазин на Авито. Используется по умолчанию для всех товаров."
+          - label: "Товары"
+            name: "products"
+            widget: "list"
+            fields:
+              - { label: "ID (латиницей, без пробелов)", name: "id", widget: "string" }
+              - { label: "Название", name: "title", widget: "string" }
+              - { label: "Цена (₽)", name: "price", widget: "string", required: false }
+              - { label: "Фото", name: "image", widget: "image" }
+              - { label: "Описание", name: "description", widget: "text", required: false }
+              - { label: "Ссылка на Авито (если своя)", name: "avito_url", widget: "string", required: false }
+              - { label: "Текст кнопки", name: "button_text", widget: "string", default: "Купить" }
