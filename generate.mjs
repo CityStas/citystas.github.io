@@ -26,7 +26,7 @@ ${priceHtml}<div class="loop-button-wrap button-layout3 button-width-auto"></div
 }
 
 function updateCatalog(html, products, avitoDefault) {
-  const cards = products.map(p => makeCard(p, avitoDefault)).join('\n');
+  const cards = products.filter(p => !p.out_of_stock).map(p => makeCard(p, avitoDefault)).join('\n');
   const pattern = /(<ul class="products columns-4">).*?(<\/ul>)/s;
   return html.replace(pattern, (m, open, close) => open + '\n' + cards + '\n' + close);
 }

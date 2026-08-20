@@ -9,8 +9,8 @@
       "price": "4200",
       "image": "/wp-content/uploads/2025/01/123232-420x420.png",
       "description": "Бланковая дека для скейтборда. Доступные скейтборды недорого.",
-      "avito_url": "https://www.avito.ru/brands/d2104a75df3bf5aa5763eb08943f9f6c/",
-      "button_text": "Авито Доставка"
+      "out_of_stock": true,
+      "button_text": "НЕТ В НАЛИЧИИ"
     },
     {
       "id": "baza-wax",

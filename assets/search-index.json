@@ -1,0 +1,15 @@
+[
+  {"title": "Главная", "url": "/", "keywords": "база скейтборды главная"},
+  {"title": "Каталог", "url": "/shop/", "keywords": "каталог товары магазин shop"},
+  {"title": "Деки для скейтборда", "url": "/decks/", "keywords": "деки доски скейтборд blank deck"},
+  {"title": "Видео", "url": "/video/", "keywords": "видео скейт"},
+  {"title": "Контакты", "url": "/contacts/", "keywords": "контакты связь адрес телефон"},
+  {"title": "Оплата и доставка", "url": "/оплата-доставка/", "keywords": "оплата доставка avito автито"},
+  {"title": "Политика конфиденциальности", "url": "/politica/", "keywords": "политика конфиденциальность"},
+  {"title": "Дека БАЗА «Пекарь» 2026 + Наждак", "url": "/product/baza-deck-bake-2026/", "keywords": "дека пекарь bake 2026 наждаk нет в наличии"},
+  {"title": "Дека бланковая БАЗА Черная + Наждак", "url": "/product/baza-deck-black-2026/", "keywords": "дека черная black blank"},
+  {"title": "Дека бланковая БАЗА Оранжевая + Наждак", "url": "/product/baza-blank-orange-26/", "keywords": "дека оранжевая orange blank"},
+  {"title": "Дека бланковая БАЗА Фиолетовая + Наждак", "url": "/product/blank-decks-2/", "keywords": "дека фиолетовая purple blank"},
+  {"title": "Парафин «БАЗА»", "url": "/product/baza-wax/", "keywords": "парафин wax воск"},
+  {"title": "Наждак для скейтборда", "url": "/product/griptape-baza/", "keywords": "наждак griptape grip tape"}
+]
