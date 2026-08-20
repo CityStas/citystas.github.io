@@ -4,13 +4,40 @@
   },
   "products": [
     {
-      "id": "baza-deck-bake-2026",
-      "title": "Дека БАЗА «Пекарь» 2026 + Наждак",
-      "price": "4200",
-      "image": "/wp-content/uploads/2025/01/123232-420x420.png",
+      "id": "baza-deck-black-2026",
+      "title": "Дека бланковая БАЗА Черная + Наждак",
+      "price": "3790",
+      "image": "/wp-content/uploads/2022/04/4-1024x1024.png",
       "description": "Бланковая дека для скейтборда. Доступные скейтборды недорого.",
-      "out_of_stock": true,
-      "button_text": "НЕТ В НАЛИЧИИ"
+      "avito_url": "https://www.avito.ru/sankt-peterburg/sport_i_otdyh/deka_dlya_skeytborda_baza_2026_nazhdak_2299716475",
+      "button_text": "Авито Доставка"
+    },
+    {
+      "id": "baza-blank-orange-26",
+      "title": "Дека бланковая БАЗА Оранжевая + Наждак",
+      "price": "3790",
+      "image": "/wp-content/uploads/2022/04/5-1024x1024.jpg",
+      "description": "Бланковая дека для скейтборда. Доступные скейтборды недорого.",
+      "avito_url": "https://www.avito.ru/sankt-peterburg/sport_i_otdyh/deka_dlya_skeytborda_baza_2026_nazhdak_2299716475",
+      "button_text": "Авито Доставка"
+    },
+    {
+      "id": "blank-decks-2",
+      "title": "Дека бланковая БАЗА Фиолетовая + Наждак",
+      "price": "3790",
+      "image": "/wp-content/uploads/2022/04/3-1024x1024.png",
+      "description": "Бланковая дека для скейтборда. Доступные скейтборды недорого.",
+      "avito_url": "https://www.avito.ru/sankt-peterburg/sport_i_otdyh/deka_dlya_skeytborda_baza_2026_nazhdak_2299716475",
+      "button_text": "Авито Доставка"
+    },
+    {
+      "id": "griptape-baza",
+      "title": "Наждак для скейтборда",
+      "price": "",
+      "image": "/wp-content/uploads/2021/09/IMG_8637-scaled-420x420.jpg",
+      "description": "Наждак (griptape) для скейтборда.",
+      "avito_url": "https://www.avito.ru/brands/d2104a75df3bf5aa5763eb08943f9f6c/",
+      "button_text": "Бесплатно к деке"
     },
     {
       "id": "baza-wax",
@@ -22,13 +49,13 @@
       "button_text": "Бесплатно к деке"
     },
     {
-      "id": "griptape-baza",
-      "title": "Наждак для скейтборда",
-      "price": "",
-      "image": "/wp-content/uploads/2021/09/IMG_8637-scaled-420x420.jpg",
-      "description": "Наждак (griptape) для скейтборда.",
-      "avito_url": "https://www.avito.ru/brands/d2104a75df3bf5aa5763eb08943f9f6c/",
-      "button_text": "Бесплатно к деке"
+      "id": "baza-deck-bake-2026",
+      "title": "Дека БАЗА «Пекарь» 2026 + Наждак",
+      "price": "4200",
+      "image": "/wp-content/uploads/2025/01/123232-420x420.png",
+      "description": "Бланковая дека для скейтборда. Доступные скейтборды недорого.",
+      "out_of_stock": true,
+      "button_text": "НЕТ В НАЛИЧИИ"
     }
   ]
 }
