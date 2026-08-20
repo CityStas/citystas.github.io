@@ -122,3 +122,10 @@ h1,h2,h3,h4,h5,h6,.site-title{text-decoration:none;text-transform:none;font-styl
 body.baza-site-search-open {
   overflow: hidden;
 }
+
+/* ===== Скрытие лупы: фото открывается по клику на любую часть ===== */
+.single-product .woocommerce-product-gallery__trigger,
+.woocommerce-product-gallery__trigger {
+  display: none !important;
+  visibility: hidden !important;
+}

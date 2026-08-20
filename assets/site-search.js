@@ -143,8 +143,26 @@
     });
   }
 
+  function bindGalleryClickToOpenLightbox() {
+    var gallery = document.querySelector('.woocommerce-product-gallery');
+    if (!gallery || gallery.dataset.bazaGalleryBound) return;
+    gallery.dataset.bazaGalleryBound = '1';
+
+    // Открываем полноэкранное фото при клике в любое место галереи
+    gallery.addEventListener('click', function (e) {
+      // Не перехватываем клики по кнопкам/ссылкам галереи, чтобы не конфликтовать
+      if (e.target.closest('a, button, .woocommerce-product-gallery__trigger')) return;
+      var trigger = gallery.querySelector('.woocommerce-product-gallery__trigger');
+      if (trigger && window.jQuery) {
+        e.preventDefault();
+        window.jQuery(trigger).trigger('click');
+      }
+    });
+  }
+
   function init() {
     bindSearchButtons();
+    bindGalleryClickToOpenLightbox();
     fixGalleryZoomIcon();
 
     var gallery = document.querySelector('.woocommerce-product-gallery');
