@@ -129,3 +129,16 @@ body.baza-site-search-open {
   display: none !important;
   visibility: hidden !important;
 }
+
+/* ===== Устранение FOUC: секции Elementor сразу на всю ширину ===== */
+.elementor-section-stretched {
+  width: 100% !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.elementor-section-stretched > .elementor-container {
+  width: 100% !important;
+  max-width: 100% !important;
+}
