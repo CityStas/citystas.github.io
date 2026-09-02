@@ -58,3 +58,29 @@
     margin-top: 0 !important;
     margin-bottom: 0 !important;
 }
+
+/* ИСПРАВЛЕНИЕ МЕЛЬКАНИЯ: stretched-секции Elementor изначально отрисовываются
+внутри центрированного контейнера (узкими и смещёнными вправо), затем JS
+стуretch сдвигает их на весь экран -> заметный скачок при загрузке.
+Этот CSS полностью перехватывает контроль у JS: секция уже в первом кадре
+занимает всю ширину вьюпорта. !important побеждает инлайн-стили stretch-JS,
+left:auto убирает его px-компенсацию. */
+.elementor-section-stretched.elementor-section-full_width {
+    width: 100vw !important;
+    max-width: none !important;
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    margin-left: calc(-50vw + 50%) !important;
+    margin-right: calc(-50vw + 50%) !important;
+}
+
+/* ГЛАВНАЯ: обёртка elementor на главной лежит напрямую во flex-ряду .main-row
+(без .entry-content, в отличие от остальных страниц). Из-за этого её ширина
+схлопывается в 0, и calc(-50vw + 50%) в правиле выше превращается в -50vw,
+уводя stretched-секции (3 товара + 2 видео) влево за экран.
+Даём обёртке полную ширину ряда — секции сразу встают на весь вьюпорт. */
+.content-wrapper .main-row > .elementor {
+    width: 100%;
+}
