@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /admin/config.yml
+
+Sitemap: https://bazaskate.shop/sitemap.xml
