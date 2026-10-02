@@ -1,3 +1,3 @@
 # БАЗА Скейтборды
 
-bazaskate.shop
+[bazaskate.shop](https://bazaskate.shop/)
